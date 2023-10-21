@@ -1,6 +1,7 @@
 # NRO
 Vaje za NRO
 
-To je Matijev repozitorij projektov pri predmetu Napredna računalniška orodja.
+To je repozitorij projektov pri predmetu Napredna računalniška orodja.
+Pripada Matiji Debeljaku (23211336)
 
 Prosim ne bodite preveč pedantni.
