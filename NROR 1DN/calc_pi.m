@@ -1,21 +1,23 @@
 global znotraj_kroga
 global znotraj_kvadrata
-len = input("Vnesite število želenih naključnih točk") % prosi uporabnika za želeno število želenih točk
-tiledlayout(2,1)
+len = input("Vnesite število želenih naključnih točk: "); % prosi uporabnika za želeno število želenih točk
+tiledlayout(2,1);
 nexttile
 hold on
-for i = 1:10:len+1
+for i = 1:10:len+1;
     [pi,napaka]=area_pi(i); % kliče funkcijo area_pi z vsakič večjim številom točk od 1 do želenega števila
     plot(i,pi,"g.") % nariše graf z vrednostmi izračunane približne pi
     plot(i,napaka,"r.")% nariše graf odstopka izračunane pi od dejanske
 end
 
-yline(pi,"-","dejanska vrednost pi")% nraiše vodoravno črto pri vrednosti pi
-yline(0) % nariše vodoravno črto pri vrednosti 0
-lgd = legend('vrednost izračunane pi','odstopanje od dejanske pi') % nariše legendo
-lgd.Location = "northoutside"
-xlabel('število točk') % ime x osi
-ylabel('vrednost pi') % ime y osi
+[znotraj_kroga, znotraj_kvadrata] = mcc_pi(len); %To sem moral dodati, drugače mi ne deluje. global naredi spremenljivke ampak sta prazna vektorja
+
+yline(pi,"-","dejanska vrednost pi");% nariše vodoravno črto pri vrednosti pi
+yline(0); % nariše vodoravno črto pri vrednosti 0
+lgd = legend('vrednost izračunane pi','odstopanje od dejanske pi'); % nariše legendo
+lgd.Location = "northoutside";
+xlabel('število točk'); % ime x osi
+ylabel('vrednost pi'); % ime y osi
 hold off
 
 
@@ -24,12 +26,15 @@ hold on
 krog = @(x) [(1-x.^2).^(1/2);-(1-x.^2).^(1/2)]; % anonimna funkcija, ki za krožnico definira koordinate y glede na x 
 sezn = linspace(-1,1,100); % generira 100 točk x od -1 do 1
 y = krog(sezn); % za vsako x točko generira točki y pri tem x
-plot(sezn,y(1,:),"b-") %nariše zgornjo polovico kroga
-plot(sezn,y(2,:),"b-") %nariše spodnjo polvico kroga
+plot(sezn,y(1,:),"b-", DisplayName='', HandleVisibility='off'); %nariše zgornjo polovico kroga
+plot(sezn,y(2,:),"b-", DisplayName='', HandleVisibility='off'); %nariše spodnjo polovico kroga
 
-
-plot(znotraj_kroga(:,1),znotraj_kroga(:,2),"g*")% nariše točke znotraj kroga
-plot(znotraj_kvadrata(:,1),znotraj_kvadrata(:,2),"r.")% nariše točke zunaj kroga
+plot(znotraj_kroga(:,1),znotraj_kroga(:,2),"g*", DisplayName="točke znotraj kroga");% nariše točke znotraj kroga
+plot(znotraj_kvadrata(:,1),znotraj_kvadrata(:,2),"r.", DisplayName="točke zunaj kroga");% nariše točke zunaj kroga
+legend(Location='northoutside');%pozicija legende (sredina zgoraj)
+xlabel('x os'); %ime osi x
+ylabel('y os'); %ime osi y
+daspect([1,1,1]);
 
 
 
