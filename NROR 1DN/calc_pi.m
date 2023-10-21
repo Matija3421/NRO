@@ -1,3 +1,5 @@
+global znotraj_kroga
+global znotraj_kvadrata
 len = input("Vnesite število želenih naključnih točk") % prosi uporabnika za želeno število želenih točk
 tiledlayout(2,1)
 nexttile
@@ -9,7 +11,7 @@ for i = 1:10:len+1
 end
 
 yline(pi,"-","dejanska vrednost pi")% nraiše vodoravno črto pri vrednosti pi
-yline(0) % nraiše vodoravno črto pri vrednosti 0
+yline(0) % nariše vodoravno črto pri vrednosti 0
 lgd = legend('vrednost izračunane pi','odstopanje od dejanske pi') % nariše legendo
 lgd.Location = "northoutside"
 xlabel('število točk') % ime x osi
@@ -25,12 +27,12 @@ y = krog(sezn); % za vsako x točko generira točki y pri tem x
 plot(sezn,y(1,:),"b-") %nariše zgornjo polovico kroga
 plot(sezn,y(2,:),"b-") %nariše spodnjo polvico kroga
 
+
 plot(znotraj_kroga(:,1),znotraj_kroga(:,2),"g*")% nariše točke znotraj kroga
 plot(znotraj_kvadrata(:,1),znotraj_kvadrata(:,2),"r.")% nariše točke zunaj kroga
 
 
 
-%%
 function[pij,napaka] = area_pi(n) % definiramo funkcijo, ki določi število pi po postopku monte carlo.
 [znotraj_kroga,znotraj_kvadrata] = mcc_pi(n); % kličemo funkcijo mcc_pi in iz nje dobimo točke zunaj in znotraj kroga
 m = size(znotraj_kroga);
