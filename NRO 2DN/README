@@ -1,0 +1,10 @@
+V mapi za drugo domačo nalogo so 3 datoteke. Datoteka "MyPackage" vsebuje funkcijo mcc_pi, ki jo kličemo v datoteki areapi.
+
+!!! V KODI "areapi" JE NUJNO POTREBNO DODATI PATH V KATEREM STE SHRANILI "MyPackage", DRUGAČE NE BOSTE MOGLI KLICATI FUNKCIJE mccpi!!!
+"areapi"
+
+S funkcijo areapi določimo željeno število naključnih točk. Funckija dolooči katere ležijo v krogu in katere zunaj njega, nato pa s tem izračuna
+približek števila pi. Nato nariše graf iteracij približkov in njihovega odstopanja od dejanskega števila pi, ter izriše grafiko krožnice s točkami.
+
+Tretja datoteka je "Taylorjeva_vrsta". Ta izračuna Taylorjevo vrsto določene funkcije, nato pa izriše graf na katerem lahko primerjate točnen izgled 
+funkcije in približke Taylorjeve vrste od reda 1 do 10. 
