@@ -1,0 +1,6 @@
+V datoteki main.cpp je napisan program v jeziku C++, ki omogoča računanje integrala e^3x Arctan(x/2) v mejah od 0 do pi/4. Integral se računa po trapezni metodi,
+arkustangens pa je določen z razvojem v Taylorjevo vrsto.
+
+Ko program zaženemo nas vpraša na koliko razdelkov želimo izračunati trapezni integral, nato pa nas vpraša še katero stopnjo Taylorjeve vrste Arctan želimo izračunati.
+
+Na koncu nam vrne približno vrednost našega integrala.
