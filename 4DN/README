@@ -1,0 +1,5 @@
+V tej mapi je program za računanje odvodov. Odpreti moramo datoteko main.cpp in poly.txt. Če datoteke poly.txt nimamo odprte, moramo v programu main.cpp na začetku specificirati 
+lokacijo poly.txt. 
+Program nam vzame podatke x in f(x) iz vsake vrstice poly.txt in izračuna odvod v vsaki točki. V prvi točki odvod izračuna po shemi naprej, v vmsenih točkah po srednji shemi, 
+v zadnji pa po shemi nazaj.
+Na koncu proogram ustvari datoteko diff_poly.txt in vanjo zapiše odvode, ki jih je izračunal.
