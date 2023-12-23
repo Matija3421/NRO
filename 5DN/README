@@ -1,0 +1,10 @@
+V tej datoteki se nahaja program "dn5_koda.cpp". Koda je namenjena računanju sistema enačb za prenos toplote. Dodana je tudi paralelizacija, ki pospeši for zanko pri reševanju z metodo Gauss-Seidel.
+- Kodo naložimo v poljubno datoteko na HPC-ju.
+- V konzoli navigiramo do directoryja kamor smo kodo naložili.
+- Ustvarimo exec file za našo kodo, v konzolo napišemo: g++ -fopenmp -o dn5_exec dn5_koda.cpp (namesto dn5_exec lahko uporabimo tudi kakšno drugo ime za exec file)
+- Poženemo exec file z ukazom: ./dn5_exec
+
+Konzola izvede našo kodo. Izpiše se čas izvajanja, izračunane temperature po točkah in najvišja izračunana temperatura.
+
+V kodi "dn5_koda.cpp" je z vrstico "omp_set_num_threads()" definirano število threadov, ki jih HPC uporabi za računanje problema.
+Originalno je število nastavljeno na 20, a ga lahko po želji spremenimo.
