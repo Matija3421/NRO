@@ -4,7 +4,8 @@ C++ koda se nahaja v datoteki ConsoleApplication3 -> ConsoleApplication3 -> Cons
 Pazite, saj za pravilno delovanje program potrebuje knjižnico nlohmann. V projektni datoteki je že naložena, edino spremeniti morate njeno lokacijo 
 v properties ConsoleApplication.cpp. V main delu kode C++ morate na mestu zagona funkcije "PreberiTocke" spremeniti lokacijo .txt datoteke s podatki o mreži.
 
-Prav tako morate paziti pri programu za Wolfram Mathematico, na vrhu kode je potrebno spremeniti lokacijo datoteke output1.json, ki jo ustvari C++ program. Datoteka output1.json je sicer že shranjena v .zip datoteki mojega projekta. Ta vsebuje podatke o matriki A in vektorju b za mrežo primera 3.
+Prav tako morate paziti pri programu za Wolfram Mathematico, na vrhu kode je potrebno spremeniti lokacijo datoteke output1.json, ki jo ustvari C++ program. 
+Datoteka output1.json je sicer že shranjena v .zip datoteki mojega projekta. Ta vsebuje podatke o matriki A in vektorju b za mrežo primera 3.
 
 Program C++ je sicer napisan tako, da dela za vse 4 primere.
 
