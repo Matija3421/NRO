@@ -10,9 +10,9 @@ Datoteka output1.json je sicer že shranjena v .zip datoteki mojega projekta. Ta
 
 Program C++ je sicer napisan tako, da dela za vse 4 primere.
 
-output_vtk.vtk vsebuje podatke za vizualizacijo rešitve primera 3. Datoteko le odpremo v programskem okolju Paraview. 
+output_vtk.vtk vsebuje podatke za vizualizacijo rešitve primera 3. Datoteko le odpremo v programskem okolju Paraview, da vidimo rezultate. 
 
-Podrobnejše delovanje mojih programskih rešitev je napisano v pdf datoteki PROJEKTNA_NRO_JURE_MATIJA
+Podrobnejše delovanje mojih programskih rešitev je napisano v pdf datoteki PROJEKTNA_NRO_JURE_MATIJA.
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
